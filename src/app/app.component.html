@@ -1,0 +1,11 @@
+<button (click)='Print($event)'>Print</button>
+<button (click)='Export($event)'>Export to Excel</button>
+<ejs-chart #chart [width]='width' [height]='height' id="chart-container">
+        <e-series-collection>
+            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name="Excel Data"></e-series>
+        </e-series-collection>
+        <e-annotations>
+        <e-annotation>
+        </e-annotation>
+        </e-annotations>
+    </ejs-chart>
